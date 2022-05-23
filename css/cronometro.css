@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+:root{
+    --colorBg: #000000cc;
+    --colorTextLed: #9acd32;
+    --colorShadow: #708090;
+    --colorPage: #d2b48c;
+    --colorHover: #99cd325d;
+}
+*{
+    /*Config Gerais básicas*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+
+}
+body{
+    background-color: var(--colorPage);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 100vw;
+    max-height: 100vh;
+
+}
+
+main{
+    /*Posicionamento*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    width: fit-content;
+    height: fit-content;
+    min-width: 300px;
+    min-height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 10px 10px 10px;
+    
+
+    /*Aparência*/
+    background-color: var(--colorBg);
+    border: 5px dashed var(--colorShadow);
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.305);
+    
+
+}
+
+main h1{
+    color: var(--colorTextLed);
+    max-height: 1vh;
+
+}
+
+main > div.led{
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+
+}
+div.led>h2{
+    background-color: black;
+    color: yellowgreen;
+    font-size: 3vh;
+    text-align: center;
+    max-width: 100%;
+    
+}
+
+main div.buttons{
+    display: flex;
+    max-width: 100%;
+    gap: 10px;    
+}
+
+main button{
+    padding: 0 10px 0 10px;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--colorBg);
+    color: var(--colorTextLed);
+}
+
+main button:hover {
+    background-color: var(--colorHover);
+}
+
+aside{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    
+}
+
+div.log{
+    height: 30vh;
+    background-color: var(--colorBg);
+    color: var(--colorTextLed);
+}
+
+

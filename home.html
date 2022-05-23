@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning JS</title>
     <script src="aula.js"></script>
+    
 </head>
 <body>
 
@@ -17,8 +18,8 @@
 
         
         <code>
-            window.alert('Digite sua mensagem aqui')
-            window.confirm('Você Está gostando de JS?')
+            window.alert('Digite sua mensagem aqui') <br>
+            window.confirm('Você Está gostando de JS?') <br>
             window.prompt('Qual seu nome?')
         </code>
 
@@ -43,6 +44,16 @@
        </form>
 
         <script>
+            var idade = Number(prompt('Digite sua Idade:'))
+            alert(`A sua idade é ${idade}!`)
+            write(`A Sua idade é ${idade}!`)
+            document.write(`Sua idade tem ${idade.length}!`)
+
+            var n1 = 1545.5
+            n1.toLocaleString('pt-br', {style: 'currency', currency:'USD'})
+            write(n1)
+
+
             // window.alert('Digite sua mensagem aqui')
             // window.prompt('Qual seu nome?')
             // window.alert('Digite sua mensagem aqui')
