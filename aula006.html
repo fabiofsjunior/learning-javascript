@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: violet;
+            color: white;
+            font-size: 2em;
+
+            
+        }
+        h1{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo.</h1>
+    <p>Já me livrei da maldição!!</p>
+
+    <form action="">
+        <label for="name" >Nome:</label>
+        <input type="text" id="name" placeholder="Nome">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password">
+        <input type="submit" id="sendLogin" value="Login">
+
+    </form>
+
+
+
+
+
+    <script>
+        const btn = document.querySelector("#sendLogin");
+
+        btn.addEventListener("click", function(e){
+            e.preventDefault();
+            const name = document.querySelector("#name")
+            const value = name.value;
+
+            console.log(value);
+            // document.getElementById("name").innerHTML = 
+        })
+
+
+    //    var nome = window.prompt('Qual é seu nome?')
+    //    alert('É um grande prazer em te conhecer,' +  nome + "!")
+
+        // var n1= Number(prompt('Digite um número: '))
+        // var n2= Number(prompt('Digite um número: '))
+
+        // var s = n1 + n2
+        // alert('A soma dos valores é:' + s)
+
+        // document.write(`A soma dos valores é: ${s}!`)
+
+        
+    
+    </script>
+</body>
+</html>

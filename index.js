@@ -2,4 +2,6 @@
 // alert('É um grande prazer em te conhecer ' + nome + ' !')
 
 
+let gastosMenais=[];
 
+prompt()
